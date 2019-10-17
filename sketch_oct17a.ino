@@ -7,11 +7,11 @@ const int trigPinf = 7;
 const int echoPinf = 3;   
 
 // Right US sensor.
-const int trigPinr = 8;           
+const int trigPinr = 4;           
 const int echoPinr = 5;
 
  // Left US sensor.
-const int trigPinl =  4;           
+const int trigPinl =  8;           
 const int echoPinl =  9;   
 
  // Back US sensor.
@@ -157,7 +157,7 @@ void find_blocks(){
   Serial.print("leftblocks: ");
   Serial.println(lblocks);
 
-  x = 1000*fblocks+10*bblocks;     
+  x = 1000*fblocks+100*rblocks+10*bblocks+1*lblocks;     
     
   return;
 }
